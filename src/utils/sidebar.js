@@ -1,13 +1,13 @@
 import Generic from "../page/Generic";
-  
-import  buyurtma from '../assets/icons/buyurtmalar.svg';
-import  filial  from '../assets/icons/filial.svg';
-import  hisobot  from '../assets/icons/hisobot.svg';
-import  hodimlar  from '../assets/icons/settings.svg';
-import settings  from '../assets/icons/settings.svg';
-import  mahsulotlar  from '../assets/icons/mahsulotlar.svg';
-import kategoriya  from '../assets/icons/kategoriya.svg';
-import  mijozlar  from '../assets/icons/mijozlar.svg';
+import { ReactComponent as buyurtma } from '../assets/icons/buyurtmalar.svg';
+import { ReactComponent as filial } from '../assets/icons/filial.svg';
+import { ReactComponent as hisobot } from '../assets/icons/hisobot.svg';
+import { ReactComponent as hodimlar } from '../assets/icons/settings.svg';
+import { ReactComponent as settings } from '../assets/icons/settings.svg';
+import { ReactComponent as mahsulotlar } from '../assets/icons/mahsulotlar.svg';
+import { ReactComponent as kategoriya } from '../assets/icons/kategoriya.svg';
+import { ReactComponent as mijozlar } from '../assets/icons/mijozlar.svg';
+
 
 
 export const sidebar = [

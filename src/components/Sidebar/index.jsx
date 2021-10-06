@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../../assets/imgs/logo.png';
-import { Container, LogoWrapper, Text, Wrapper } from './style';
+import { Container, IconCon, Item, Link, LogoWrapper, Text, Wrapper, } from './style';
 import { sidebar } from '../../utils/sidebar';
 export const Sidebar = () => {
     return (
@@ -16,7 +16,13 @@ export const Sidebar = () => {
 
            {sidebar.map(({ id, title, path, hidden, Icon }) => {
           return (
-            <h1>{title}</h1>
+            <Item>
+            <Link key={id} to={path} >
+<Icon className='icon'/>
+            {title}
+            </Link>
+            
+            </Item>
           );
         })}
 

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components"
 
 export const Container = styled.div`
@@ -54,3 +55,37 @@ export const Wrapper = styled.div`
 display: flex;
 flex-direction: column;
 `;
+
+export const Item =styled.div`
+margin: 0px 24px  20px 0 ;
+height: 48px;
+/* padding-left: 40px; */
+`
+export const Link = styled(NavLink)`
+display:flex;
+align-items: center;
+  font-family: SFProDisplay;
+  font-size: 17px;
+  line-height: 18px;
+  color: #2d3a45;
+  text-decoration: none;
+  border-radius: 0px 6px 6px 0px;
+  /* margin-left: 10px; */
+  .icon{
+    margin-right: 20px;
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+    background: #f6f6f6;
+    border-radius: 6px;
+    margin-left: 40px;
+  }
+  transition: all 0.2s;
+`
+
+export const IconCon =styled.img`
+width: 16px ;
+height: 16px;
+padding: 10px;
+background: #f6f6f6;
+`
