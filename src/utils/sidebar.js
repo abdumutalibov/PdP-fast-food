@@ -1,4 +1,5 @@
 import Generic from "../page/Generic";
+import Buyutmalar from "../page/Buyurtmalar";
 import { ReactComponent as buyurtma } from '../assets/icons/buyurtmalar.svg';
 import { ReactComponent as filial } from '../assets/icons/filial.svg';
 import { ReactComponent as hisobot } from '../assets/icons/hisobot.svg';
@@ -15,7 +16,7 @@ export const sidebar = [
       id: 1,
       path: '/',
       title: 'Buyurtmalar',
-      Component: Generic,
+      Component: Buyutmalar,
       Icon: buyurtma,
       hidden: false,
     },

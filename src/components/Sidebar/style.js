@@ -74,6 +74,9 @@ align-items: center;
   color: #2d3a45;
   text-decoration: none;
   border-radius: 0px 6px 6px 0px;
+  :hover{
+      color:#FCB600 ;
+    }
  .icon {
     margin-right: 20px;
     width: 36px;
@@ -82,6 +85,9 @@ align-items: center;
     background: #f6f6f6;
     border-radius: 6px;
     margin-left: 40px;
+    :hover{
+     background-color: #FCB600;
+    }
   }
   transition: all 0.2s;
 `
@@ -94,7 +100,7 @@ height: 36px;
 padding: 10px;
 background: #f6f6f6;
 border-radius: 6px;
-margin: 0 20px 0 40px;
+margin: 0 20px 0 40px; 
 `
 
 IconWrapper.Title = styled.div`
@@ -108,4 +114,5 @@ export const activeStyle = {
   color: 'white',
   background: '#FCB600',
   padding: '10px 0',
+  
 };
