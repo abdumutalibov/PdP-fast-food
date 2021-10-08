@@ -13,7 +13,7 @@ import { ReactComponent as mijozlar } from '../assets/icons/mijozlar.svg';
 export const sidebar = [
     {
       id: 1,
-      path: 'buyurtmalar',
+      path: '/',
       title: 'Buyurtmalar',
       Component: Generic,
       Icon: buyurtma,

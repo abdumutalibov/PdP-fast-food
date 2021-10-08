@@ -1,34 +1,48 @@
-import React from 'react'
-import logo from '../../assets/imgs/logo.png';
-import { Container, IconCon, Item, Link, LogoWrapper, Text, Wrapper, } from './style';
-import { sidebar } from '../../utils/sidebar';
-export const Sidebar = () => {
-    return (
-       <Container>
-           <LogoWrapper>
-<LogoWrapper.Img src={logo} alt ='logo'/>
-<Text>
-    <Text.Title>Fast Food</Text.Title>
-    <Text.Desc>Online Maxsulot sotuvi</Text.Desc>
-</Text>
-           </LogoWrapper>
-           <Wrapper>
+import React from "react";
+import logo from "../../assets/imgs/logo.png";
+import {
+  activeStyle,
+  Container,
+  IconWrapper,
+  Item,
+  Link,
+  LogoWrapper,
+  Text,
+  Wrapper,
+} from "./style";
+import { sidebar } from "../../utils/sidebar";
+import { ReactComponent as Chiqish } from "../../assets/icons/logout.svg";
 
-           {sidebar.map(({ id, title, path, hidden, Icon }) => {
+export const Sidebar = () => {
+  return (
+    <Container>
+      <LogoWrapper>
+        <LogoWrapper.Img src={logo} alt="logo" />
+        <Text>
+          <Text.Title>Fast Food</Text.Title>
+          <Text.Desc>Online Maxsulot sotuvi</Text.Desc>
+        </Text>
+      </LogoWrapper>
+      <Wrapper>
+        {sidebar.map(({ id, title, path, hidden, Icon }) => {
           return (
-            <Item>
-            <Link key={id} to={path} >
-<Icon className='icon'/>
-            {title}
-            </Link>
-            
+            <Item key={id}>
+              <Link exact activeStyle={activeStyle} key={id} to={path}>
+                <Icon className="icon" />
+                {title}
+              </Link>
             </Item>
           );
         })}
-
-                </Wrapper>
-           </Container>
-    )
-}
+      </Wrapper>
+      <Wrapper chiqish>
+        <IconWrapper>
+          <Chiqish exact activeStyle={activeStyle}  />
+        </IconWrapper>
+        <IconWrapper.Title>Chiqish</IconWrapper.Title>
+      </Wrapper>
+    </Container>
+  );
+};
 
 export default Sidebar;
