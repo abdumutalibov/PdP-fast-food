@@ -76,6 +76,7 @@ align-items: center;
   border-radius: 0px 6px 6px 0px;
   :hover{
       color:#FCB600 ;
+      
     }
  .icon {
     margin-right: 20px;
@@ -85,9 +86,11 @@ align-items: center;
     background: #f6f6f6;
     border-radius: 6px;
     margin-left: 40px;
+    transition: all 0.4s;
     :hover{
      background-color: #FCB600;
     }
+
   }
   transition: all 0.2s;
 `
