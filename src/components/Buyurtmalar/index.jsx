@@ -1,16 +1,15 @@
-import React from 'react'
-import Navbar from './Navbar'
-import { Container } from './style'
-export const Buyutmalar = ({location}) => {
-    return(
+import React from "react";
+import Body from "./Body";
+import Navbar from "./Navbar";
+import { Container } from "./style";
+export const Buyutmalar = ({ location }) => {
+  return (
+    <Container>
+      <Navbar />
 
-        <Container>
-            <Navbar/>
-        </Container>
-        ) 
-       
-    
+      <Body />
+    </Container>
+  );
+};
 
-}
-
-export default Buyutmalar
+export default Buyutmalar;

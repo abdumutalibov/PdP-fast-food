@@ -8,6 +8,7 @@ import { ReactComponent as settings } from '../assets/icons/settings.svg';
 import { ReactComponent as mahsulotlar } from '../assets/icons/mahsulotlar.svg';
 import { ReactComponent as kategoriya } from '../assets/icons/kategoriya.svg';
 import { ReactComponent as mijozlar } from '../assets/icons/mijozlar.svg';
+import { Maxsulotlar } from "../components/Maxsulotlar";
 
 
 
@@ -24,7 +25,7 @@ export const sidebar = [
       id: 2,
       path: '/maxsulotlar',
       title: 'Maxsulotlar',
-      Component: Generic,
+      Component:Maxsulotlar,
       Icon: mahsulotlar,
       hidden: false,
     },

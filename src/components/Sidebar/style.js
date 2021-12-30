@@ -5,10 +5,13 @@ export const Container = styled.div`
 
 display: flex;
 flex-direction: column;
-width: 300px;
+min-width: 300px;
+width:300px;
 height:100vh;
 padding:28px 0 40px 0;
 background:white;
+position:sticky;
+top:0;
 `;
 
 export const LogoWrapper = styled.div`
@@ -104,6 +107,7 @@ padding: 10px;
 background: #f6f6f6;
 border-radius: 6px;
 margin: 0 20px 0 40px; 
+
 `
 
 IconWrapper.Title = styled.div`
@@ -117,5 +121,4 @@ export const activeStyle = {
   color: 'white',
   background: '#FCB600',
   padding: '10px 0',
-  
 };

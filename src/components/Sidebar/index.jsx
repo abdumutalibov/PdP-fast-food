@@ -39,7 +39,11 @@ export const Sidebar = () => {
         <IconWrapper>
           <Chiqish exact activeStyle={activeStyle}  />
         </IconWrapper>
-        <IconWrapper.Title>Chiqish</IconWrapper.Title>
+      <Link to='/'>
+
+      <IconWrapper.Title>Chiqish</IconWrapper.Title>
+      </Link>  
+      
       </Wrapper>
     </Container>
   );
