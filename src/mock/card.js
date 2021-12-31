@@ -3,6 +3,7 @@ export const card = {
         {
           id: 1,
           orderId: 1934,
+          categoria: 'yangi',
           time: new Date(),
           total: "404000",
           picture: 'assets/imgs/1.jpg',
@@ -21,6 +22,8 @@ export const card = {
         {
           id: 2,
           orderId: 1234,
+          categoria: 'yangi',
+
           time: new Date(),
           total: "404000",
           user: {
@@ -38,6 +41,7 @@ export const card = {
         {
           id: 3,
           orderId: 1234,
+          categoria: 'yangi',
           time: new Date(),
           total: "404000",
           user: {
@@ -57,6 +61,7 @@ export const card = {
         {
           id: 1,
           orderId: 1234,
+          categoria: 'qabul',
           time: new Date(),
           total: "404000",
           user: {
@@ -74,6 +79,7 @@ export const card = {
         {
           id: 2,
           orderId: 1234,
+          categoria: 'qabul',
           time: new Date(),
           total: "404000",
           user: {
@@ -91,6 +97,7 @@ export const card = {
         {
           id: 3,
           orderId: 1234,
+          categoria: 'qabul',
           time: new Date(),
           total: "404000",
           user: {
@@ -110,6 +117,7 @@ export const card = {
         {
           id: 1,
           orderId: 1234,
+          categoria: 'jonatilgan',
           time: new Date(),
           total: "404000",
           user: {
@@ -127,6 +135,7 @@ export const card = {
         {
           id: 2,
           orderId: 1234,
+          categoria: 'jonatilgan',
           time: new Date(),
           total: "404000",
           user: {
@@ -144,6 +153,7 @@ export const card = {
         {
           id: 3,
           orderId: 1234,
+          categoria: 'jonatilgan',
           time: new Date(),
           total: "404000",
           user: {
@@ -163,6 +173,7 @@ export const card = {
         {
           id: 1,
           orderId: 1234,
+          categoria: 'yopilgan',
           time: new Date(),
           total: "404000",
           user: {
@@ -180,6 +191,7 @@ export const card = {
         {
           id: 2,
           orderId: 1234,
+          categoria: 'yopilgan',
           time: new Date(),
           total: "404000",
           user: {
@@ -197,6 +209,7 @@ export const card = {
         {
           id: 3,
           orderId: 1234,
+          categoria: 'yopilgan',
           time: new Date(),
           total: "404000",
           user: {

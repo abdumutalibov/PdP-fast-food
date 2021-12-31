@@ -12,7 +12,7 @@ import {
   Wrapper,
 } from "./style";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [isActive, setIsActive] = useState("Yangi");
   const [isTabActive, setIsTabActive] = useState(true);
 
@@ -22,43 +22,56 @@ const Navbar = () => {
         <Plus />
         <Title>Yangi buyurma qo'shish</Title>
         <ToggleClone>
-        <IconsWrapper
-            active={isTabActive }
-            onClick={() => setIsTabActive(true)}
+          <IconsWrapper
+            active={isTabActive}
+            onClick={() => {
+              setIsTabActive(true);
+              props.onClick(true);
+            }}
           >
-            <MenuV   active={isTabActive}
-            onClick={() => setIsTabActive(true)}/>
+            <MenuV active={isTabActive} />
           </IconsWrapper>
           <IconsWrapper
             active={!isTabActive}
-            onClick={() => setIsTabActive(false)}
+            onClick={() => {
+              setIsTabActive(false);
+              props.onClick(false);
+            }}
           >
-            <MenuH />
+            <MenuH active={!isTabActive} />
           </IconsWrapper>
         </ToggleClone>
       </Wrapper>
       <Wrapper order="second">
-        <Tab>
+        <Tab active={isTabActive}>
           <Tab.Item
-            onClick={() => setIsActive("Yangi")}
+            onClick={() => {
+              isTabActive && setIsActive("Yangi");
+            }}
             active={isActive === "Yangi"}
           >
             Yangi
           </Tab.Item>
           <Tab.Item
-            onClick={() => setIsActive("Qabul qilgan")}
+            onClick={() => {
+              isTabActive && setIsActive("Qabul qilgan");
+            }}
             active={isActive === "Qabul qilgan"}
           >
             Qabul qilingan
           </Tab.Item>
           <Tab.Item
-            onClick={() => setIsActive("Jonatilgan")}
+            onClick={() => {
+              isTabActive && setIsActive("Jonatilgan");
+            }}
             active={isActive === "Jonatilgan"}
           >
             Jonatilgan{" "}
           </Tab.Item>
           <Tab.Item
-            onClick={() => setIsActive("Yopilgan")}
+            onClick={() => {
+              isTabActive && setIsActive("Yopilgan");
+            }}
             active={isActive === "Yopilgan"}
           >
             Yopilgan
@@ -69,16 +82,21 @@ const Navbar = () => {
         <Toggle>
           <IconsWrapper
             active={isTabActive}
-            onClick={() => setIsTabActive(true)}
+            onClick={() => {
+              setIsTabActive(true);
+              props.onClick(true)
+            }}
           >
-            <MenuV   active={isTabActive}
-            onClick={() => setIsTabActive(true)}/>
+            <MenuV active={isTabActive} />
           </IconsWrapper>
           <IconsWrapper
             active={!isTabActive}
-            onClick={() => setIsTabActive(false)}
+            onClick={() => {
+              setIsTabActive(false);
+              props.onClick(false);
+            }}
           >
-            <MenuH />
+            <MenuH active={!isTabActive} />
           </IconsWrapper>
         </Toggle>
       </Wrapper>

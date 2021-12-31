@@ -12,6 +12,10 @@ import {
 } from "./style";
 import { sidebar } from "../../utils/sidebar";
 import { ReactComponent as Chiqish } from "../../assets/icons/logout.svg";
+import {Menu} from 'antd'
+import { MenuItem } from "rc-menu";
+
+const {SubMenu} =Menu;
 
 export const Sidebar = () => {
   return (
@@ -24,16 +28,22 @@ export const Sidebar = () => {
         </Text>
       </LogoWrapper>
       <Wrapper>
+        <Menu>
+          <SubMenu>
         {sidebar.map(({ id, title, path, hidden, Icon }) => {
           return (
+            <Menu.Item>
             <Item key={id}>
               <Link exact activeStyle={activeStyle} key={id} to={path}>
                 <Icon className="icon" />
                 {title}
               </Link>
             </Item>
+            </Menu.Item>
           );
         })}
+        </SubMenu>
+        </Menu>
       </Wrapper>
       <Wrapper chiqish>
         <IconWrapper>

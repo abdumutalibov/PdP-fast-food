@@ -18,8 +18,8 @@ const getOrder = ({ order }) => {
 
 export const Container = styled.div`
   display: flex;
-  position:sticky;
-  top:0;
+  position: sticky;
+  top: 0;
   z-index: 999;
   @media (max-width: 1900px) {
     /* order: ${getOrder}; */
@@ -34,16 +34,13 @@ export const Wrapper = styled.div`
   background: white;
   width: ${({ align }) => (align ? "300px" : "100%")};
   border: 1px solid #e5e5e5;
+
   @media (max-width: 1900px) {
-   
     order: ${getOrder};
     flex: 1;
     width: 100%;
-    display: ${({order}) => order === 'third' && 'none'}
+    display: ${({ order }) => order === "third" && "none"};
   }
-  /* @media (max-width: 1050px) {
-     background: #edeff3;
-  } */
 `;
 export const Plus = styled(plus)`
   padding: 11px;
@@ -71,16 +68,18 @@ export const Tab = styled.div`
   border-radius: 24px;
   align-items: center;
   justify-content: space-around;
+  opacity: ${({ active }) => !active && 0.4};
+  cursor: ${({ active })=> !active && 'not-allowed'};
   @media (max-width: 1050px) {
     background: none;
     display: flex;
-  align-items: center;
-  justify-content: center;
-    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     font-family: SFProDisplay;
-  /* height: 100%; */
-  padding: 6px;
-  line-height: 16px;
+    /* height: 100%; */
+    padding: 6px;
+    line-height: 16px;
   }
 `;
 Tab.Item = styled.div`
@@ -100,12 +99,13 @@ Tab.Item = styled.div`
     active && "0px 2px 2px rgba(174, 176, 181, 0.31)"};
   border-radius: 18px;
   height: 36px;
+  /* cursor: ${({ isActive }) => !isActive && "not-allowed"}; */
   @media (max-width: 1050px) {
     font-size: 16px;
-  line-height: 16px;
-  padding:4px;
-  background-color: ${({ active }) => active && "#edeff3"};
-/* color: white; */
+    line-height: 16px;
+    padding: 4px;
+    background-color: ${({ active }) => active && "#edeff3"};
+    /* color: white; */
   }
 `;
 export const Toggle = styled.div`
@@ -117,20 +117,22 @@ export const Toggle = styled.div`
   background: #edeff3;
   border-radius: 24px;
 `;
-export const ToggleClone =styled(Toggle)`
-display: none;
-@media (max-width: 1900px) {
-display: flex;
-margin-left: auto;
-}
+export const ToggleClone = styled(Toggle)`
+  display: none;
+  @media (max-width: 1900px) {
+    display: flex;
+    margin-left: auto;
+  }
 `;
 export const MenuV = styled(menuV)`
   width: 14px;
   height: 14px;
+  fill: ${({ active }) => (active ? "#8d9ba8" : "transparent")};
 `;
 export const MenuH = styled(menuH)`
   width: 14px;
   height: 14px;
+  fill: ${({ active }) => (active ? "#8d9ba8" : "transparent")};
 `;
 export const IconsWrapper = styled.div`
   display: flex;
@@ -144,5 +146,4 @@ export const IconsWrapper = styled.div`
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s;
-
 `;
