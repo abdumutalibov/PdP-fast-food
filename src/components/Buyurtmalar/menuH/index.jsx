@@ -1,8 +1,10 @@
 import React from "react";
 import { Container, Wrapper } from "./style";
-import ProductCard from "../../ProductCard";
+import ProductCard from "../../ProductCard H";
 import { card } from "../../../mock/card";
+import { BuyurtmaContext } from "../../../context/Buyurtmalar/buyurtmalar";
 export const Body = () => {
+  const [card] = BuyurtmaContext();
 
   return (
     <Container>
@@ -11,7 +13,7 @@ export const Body = () => {
         <ProductCard key={value.id} value={value}/>
         ))}
       </Wrapper>
-      {/* <Wrapper>
+      <Wrapper>
        {card.qabul.map((value)=>(
            <ProductCard key={value.id} value={value}/>
        ))}
@@ -28,7 +30,7 @@ export const Body = () => {
         <ProductCard key={value.id} value={value}/>
           ))}
         
-      </Wrapper> */}
+      </Wrapper>
     </Container>
   );
 };
