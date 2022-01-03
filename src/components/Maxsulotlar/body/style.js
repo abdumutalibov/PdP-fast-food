@@ -38,14 +38,12 @@ border-radius: 6px;
 `;
 Item.Text = styled.div`
 display: flex;
- /* margin: 0 10px 0 90px; */
-  /* padding-left: 15px; */
+ margin-right: ${({last}) => (last && '20px')};
   align-items:center;
 `
 Item.Img =styled.img`
-/* margin: 0 166px 0 56px; */
 margin-right:10px;
-width:40px;
-height: 40px;
+width:50px;
+height: 50px;
 border-radius:50%;
 `

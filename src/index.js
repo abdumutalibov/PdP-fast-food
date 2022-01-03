@@ -7,6 +7,7 @@ import Root from "./root";
 ReactDom.render(
   <React.StrictMode>
     <MainContext>
+      
       <Root />
     </MainContext>
   </React.StrictMode>,
