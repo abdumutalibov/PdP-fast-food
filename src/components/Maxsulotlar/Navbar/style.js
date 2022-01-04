@@ -2,12 +2,16 @@ import styled from "styled-components";
 import { ReactComponent as search } from "../../../assets/icons/search.svg";
 import { ReactComponent as plus } from "../../../assets/icons/plus.svg";
 import { ReactComponent as path } from "../../../assets/icons/Path.svg";
+import { NavLink } from "react-router-dom";
 
 export const Container = styled.div`
 display: flex;
 /* flex-direction:column; */
 width: 100%;
 margin-bottom: 30px;
+ position: sticky;
+  top: 0;
+  z-index: 999;
 `
 export const Wrapper = styled.div`
 display: flex;
@@ -47,6 +51,7 @@ export const Path = styled(path)`
   background: #ffffff;
   border-radius: 25px;
 border: 7px solid #e5e5e5;
+margin-right: auto;
 
 `;
 export const Title = styled.div`
@@ -105,3 +110,9 @@ border-radius: 6px;
   box-shadow: 0px 20px 25px rgba(176, 177, 181, 0.432802);
 }
 `;
+export const Link = styled(NavLink)`
+  text-decoration: none;
+  color: #2d3a45;
+
+`
+
