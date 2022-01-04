@@ -13,6 +13,7 @@ export const Container = styled.div`
   background: #edeff3;
   border-radius: 50%;
   cursor: pointer;
+  margin-left:30px;
 `;
 export const Cancel = styled(cancel)`
   width: 44px;

@@ -3,7 +3,8 @@ import { ReactComponent as menu } from "../../../assets/icons/Vector.svg";
 import { ReactComponent as x } from "../../../assets/icons/x2.svg";
 
 export const Dropdown = styled.div`
- display: flex;
+
+display: flex;
   align-content: center;
   justify-content: center;
   width: 54px;
@@ -110,4 +111,16 @@ export const Select =styled.select`
 `
 export const Option = styled.option`
 
+`
+export const Save=styled.div`
+     display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      height: 50px;
+      margin-top: 100px;
+      background-color: chartreuse;
+      border-radius: 6px;
+      cursor: pointer;
+      color: rgb(43, 41, 41);
 `

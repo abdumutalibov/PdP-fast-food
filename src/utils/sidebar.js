@@ -1,6 +1,7 @@
 import Generic from "../page/Generic";
 import Buyutmalar from "../page/Buyurtmalar";
 import Catalog from '../page/Catalog'
+import Kategoriya from "../page/Katigoriya";
 import { ReactComponent as buyurtma } from '../assets/icons/buyurtmalar.svg';
 import { ReactComponent as filial } from '../assets/icons/filial.svg';
 import { ReactComponent as hisobot } from '../assets/icons/hisobot.svg';
@@ -34,7 +35,7 @@ export const sidebar = [
       id: 3,
       path: '/katigoriya',
       title: 'Katigoriya',
-      Component: Generic,
+      Component:Kategoriya,
       Icon: kategoriya,
       hidden: false,
     },

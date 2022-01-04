@@ -58,7 +58,7 @@ export const Navbar = () => {
         contentData={notifications}
         renderItems={(item, index,) => renderNotificationItem(item,index)}
        > </Dropdown>
-        <Menu />
+        {/* <Menu /> */}
         
       </Wrapper>
     </Container>

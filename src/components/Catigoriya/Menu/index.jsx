@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Dropzone from "../dropzone/index";
+// import Dropzone from "../dropzone/index";
 import "./style.css";
 import {
   Dropdown,
@@ -14,6 +14,7 @@ import {
   AddProduct,
   Select,
   Option,
+  Save,
 } from "./style";
 const clickOutsideRef = (content_ref, toggle_ref) => {
   document.addEventListener("mousedown", (e) => {
@@ -40,42 +41,39 @@ export const Menu = () => {
   return (
     <>
       <Dropdown ref={menu_toggle_ref} onClick={() => setActiveMenu()}>
-          
         <Path />
       </Dropdown>
 
       <div>
         <div className="theme-menu" ref={menu_ref}>
           <Container>
-            <H4>Yangi maxsulot qo’shish</H4>
+            <H4>Yangi kategori qo’shish</H4>
             <UpdataItem>
-              <Label>Maxsulot nomi</Label>
-              <UpdataInput type="text" placeholder="Chizburger" />
+              <Label>Kategoriya nomi uz</Label>
+              <UpdataInput type="text" placeholder="Issiq ichimliklar" />
+             
+            </UpdataItem>
+   <UpdataItem>
+              <Label>Kategoriya nomi ru</Label>
+              <UpdataInput
+                type="text"
+                placeholder="Горячие напитки"
+              />
             </UpdataItem>
             <AddProduct>
-              <Label>Kategoriya</Label>
+              <Label>Bosh kategoriyaga biriktirish</Label>
 
               <Select name="active" id="active">
-                <Option value="burger">burger</Option>
-                <Option value="lavash">lavash</Option>
-                <Option value="Mini lavsh">Mini lavash</Option>
+                <Option value="burger">Ichimlik</Option>
+                <Option value="lavash">Coca Cola</Option>
+                <Option value="Mini lavsh">Pepsi</Option>
+                <Option value="Mini lavsh">Sprayt</Option>
+                <Option value="Mini lavsh">Bliss</Option>
               </Select>
             </AddProduct>
 
-            <UpdataItem>
-              <Label>Narxi</Label>
-              <UpdataInput type="text" placeholder="18,500" />
-            </UpdataItem>
-
-            <UpdataItem>
-              <Label>Qo’shimcha ma’lumot</Label>
-              <UpdataInput
-                type="text"
-                placeholder="Katta burgur, 2 karra pishloq bor"
-              />
-            </UpdataItem>
-
-            <Dropzone />
+         <Save>Saqlsh</Save>
+            {/* <Dropzone /> */}
           </Container>
           <Menu_Close onClick={() => closeMenu()}>
             <X />
@@ -83,7 +81,7 @@ export const Menu = () => {
         </div>
       </div>
 
-      <div></div>
+    
     </>
   );
 };

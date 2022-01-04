@@ -1,11 +1,10 @@
-import React, { useState } from "react";
-import { Container, Item, Topbar } from "./style";
-import Delete from "../../Generic/Delete";
-import Pen from "../../Generic/Pen";
-import { MaxsulotContext } from "../../../context/Maxsulotlar/maxsulotlar";
+import React from "react";
+import { Container, Item } from "./style";
+import { KategoriyaContext } from "../../../context/Kategoriya/kategoriya";
 import Menu from "../Menu";
+import Delete from "../../Generic/Delete";
 export const Body = ({ value }) => {
-  const [, dispatch] = MaxsulotContext();
+  const [, dispatch] = KategoriyaContext();
 
   const onDelete = (value) => {
     console.log(value, "test");
@@ -15,16 +14,10 @@ export const Body = ({ value }) => {
   return (
     <Container>
       <Item>
-        <Item.Text>
-          <Item.Img src={value.avatar} /> {value.food}
-        </Item.Text>
+        <Item.Text> {value.food} </Item.Text>
         <Item.Text>{value.kategotiya}</Item.Text>
-        <Item.Text>{value.price}</Item.Text>
-        <Item.Text>{value.additional}</Item.Text>
-
+        <Item.Text>{value.empty}</Item.Text>
         <Item.Text last>
-          {/* <Pen /> */}
-
           <Menu />
           <div onClick={() => onDelete(value)}>
             <Delete />

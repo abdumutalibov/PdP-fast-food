@@ -1,5 +1,6 @@
 import React, { createContext } from "react";
 import { Buyurtmalar } from "./Buyurtmalar/buyurtmalar";
+import { Kategoriyalar } from "./Kategoriya/kategoriya";
 import { Maxsulotlar } from "./Maxsulotlar/maxsulotlar";
 // const MainContext = createContext();
 
@@ -8,7 +9,12 @@ export const MainContext = ({ children }) => {
     <div>
       <div>
         <Buyurtmalar>
-          <Maxsulotlar>{children}</Maxsulotlar>
+          <Maxsulotlar>
+            <Kategoriyalar>
+
+            {children}
+            </Kategoriyalar>
+            </Maxsulotlar>
         </Buyurtmalar>
       </div>
       {/* <Maxsulotlar>{children}</Maxsulotlar> */}

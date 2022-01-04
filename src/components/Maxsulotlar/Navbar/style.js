@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 export const Container = styled.div`
 display: flex;
 /* flex-direction:column; */
-width: 100%;
+/* width: 100%; */
 margin-bottom: 30px;
  position: sticky;
   top: 0;

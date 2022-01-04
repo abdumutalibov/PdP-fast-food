@@ -230,7 +230,7 @@ export const maxsulotlar = [
   {
     id: 1,
     food: "Lavash mini",
-    avatar:'assets/imgs/Oval.svg',
+    avatar: "assets/imgs/Oval.svg",
     kategotiya: "Lavash",
     additional: "Kichkina lavsh",
     price: "18.000 UZS",
@@ -238,7 +238,7 @@ export const maxsulotlar = [
   {
     id: 2,
     food: "Chizburger Max",
-    avatar:'assets/imgs/11.png',
+    avatar: "assets/imgs/11.png",
     kategotiya: "Lavash",
     additional: "Kichkina lavsh",
     price: "18.000 UZS",
@@ -246,7 +246,7 @@ export const maxsulotlar = [
   {
     id: 3,
     food: "Lavash Max",
-    avatar:'assets/imgs/2.svg',
+    avatar: "assets/imgs/2.svg",
     kategotiya: "Lavash",
     additional: "Kichkina lavsh",
     price: "18.000 UZS",
@@ -254,7 +254,7 @@ export const maxsulotlar = [
   {
     id: 4,
     food: "Lavash Sirom",
-    avatar:'assets/imgs/3.png',
+    avatar: "assets/imgs/3.png",
     kategotiya: "Lavash",
     additional: "Kichkina lavsh",
     price: "18.000 UZS",
@@ -262,7 +262,7 @@ export const maxsulotlar = [
   {
     id: 5,
     food: "Burger mini",
-    avatar:'assets/imgs/4.png',
+    avatar: "assets/imgs/4.png",
     kategotiya: "Lavash",
     additional: "Kichkina lavsh",
     price: "18.000 UZS",
@@ -270,7 +270,7 @@ export const maxsulotlar = [
   {
     id: 6,
     food: "Coca Cola mini",
-    avatar:'assets/imgs/5.png',
+    avatar: "assets/imgs/5.png",
     kategotiya: "Lavash",
     additional: "Kichkina lavsh",
     price: "18.000 UZS",
@@ -278,7 +278,7 @@ export const maxsulotlar = [
   {
     id: 7,
     food: "Coca Cola",
-    avatar:'assets/imgs/6.png',
+    avatar: "assets/imgs/6.png",
     kategotiya: "Lavash",
     additional: "Kichkina lavsh",
     price: "18.000 UZS",
@@ -286,7 +286,7 @@ export const maxsulotlar = [
   {
     id: 8,
     food: "Xagi mini",
-    avatar:'assets/imgs/Oval.svg',
+    avatar: "assets/imgs/Oval.svg",
     kategotiya: "Lavash",
     additional: "Kichkina lavsh",
     price: "18.000 UZS",
@@ -294,19 +294,56 @@ export const maxsulotlar = [
   {
     id: 9,
     food: "Xagi ",
-    avatar:'assets/imgs/11.png',
+    avatar: "assets/imgs/11.png",
     kategotiya: "Lavash",
     additional: "Kichkina lavsh",
     price: "18.000 UZS",
-    
   },
-   {
+  {
     id: 10,
     food: "Какой-то хрен",
-    avatar:'assets/imgs/11.png',
+    avatar: "assets/imgs/11.png",
     kategotiya: "Lavash",
     additional: "Kichkina lavsh",
     price: "18.000 UZS",
-    
   },
 ];
+
+export const kategoriya = [
+
+  {
+    id: 1,
+    food: "Burger Uz",
+    kategotiya: "Berger re",
+    empty: "-",
+    price: "18.000 UZS",
+  },
+  {
+    id: 2,
+    food: "Lavash Uz",
+    kategotiya: "Lavash ru",
+    empty: "-",
+    price: "18.000 UZS",
+  },
+  {
+    id: 3,
+    food: "Issiq ichimliklar",
+    kategotiya: "Issiq ichimlik ru",
+    empty: "Ichimliklar",
+    price: "18.000 UZS",
+  },
+  {
+    id: 4,
+    food: "Salqin ichimliklar uz",
+    kategotiya: "Salqin ichimliklar uz",
+    empty: "Ichimliklar",
+    price: "18.000 UZS",
+  },
+  {
+    id: 5,
+    food: "Ichimlik Uz",
+    kategotiya: "Ichimlik ru",
+    empty: "-",
+    price: "18.000 UZS",
+  },
+]
