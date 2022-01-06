@@ -2,6 +2,7 @@ import Generic from "../page/Generic";
 import Buyutmalar from "../page/Buyurtmalar";
 import Catalog from '../page/Catalog'
 import Kategoriya from "../page/Katigoriya";
+import Filiallar from "../page/Filiallar";
 import { ReactComponent as buyurtma } from '../assets/icons/buyurtmalar.svg';
 import { ReactComponent as filial } from '../assets/icons/filial.svg';
 import { ReactComponent as hisobot } from '../assets/icons/hisobot.svg';
@@ -43,7 +44,7 @@ export const sidebar = [
       id: 4,
       path: '/filiallar',
       title: 'Filiallar',
-      Component: Generic,
+      Component: Filiallar,
       Icon: filial,
       hidden: false,
     },
