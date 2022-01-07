@@ -3,6 +3,7 @@ import Buyutmalar from "../page/Buyurtmalar";
 import Catalog from '../page/Catalog'
 import Kategoriya from "../page/Katigoriya";
 import Filiallar from "../page/Filiallar";
+import Xisobot from '../page/Xisobot'
 import { ReactComponent as buyurtma } from '../assets/icons/buyurtmalar.svg';
 import { ReactComponent as filial } from '../assets/icons/filial.svg';
 import { ReactComponent as hisobot } from '../assets/icons/hisobot.svg';
@@ -60,7 +61,7 @@ export const sidebar = [
       id: 6,
       path: '/hisobot',
       title: 'Hisobot',
-      Component: Generic,
+      Component: Xisobot,
       Icon: hisobot,
       hidden: false,
     },
