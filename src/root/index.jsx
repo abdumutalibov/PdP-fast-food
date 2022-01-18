@@ -1,5 +1,5 @@
 import React from "react";
-import { Body, Container } from "./style";
+import {  Container } from "./style";
 import Sidebar from "../components/Sidebar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { sidebar } from "../utils/sidebar";

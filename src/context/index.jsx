@@ -1,4 +1,3 @@
-import React, { createContext } from "react";
 import { Buyurtmalar } from "./Buyurtmalar/buyurtmalar";
 import { Kategoriyalar } from "./Kategoriya/kategoriya";
 import { Maxsulotlar } from "./Maxsulotlar/maxsulotlar";
