@@ -1,4 +1,4 @@
-import { Container, Item, Topbar } from "./style";
+import { Container, Item,  } from "./style";
 import Delete from "../../Generic/Delete";
 import { MaxsulotContext } from "../../../context/Maxsulotlar/maxsulotlar";
 import Menu from "../Menu";

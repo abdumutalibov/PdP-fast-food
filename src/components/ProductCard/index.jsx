@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Cancel from "../Generic/Cancel";
 import Done from "../Generic/Done";
 import { Container, Footer, IconWrapper, Info, Timer, Wrapper } from "./style";
