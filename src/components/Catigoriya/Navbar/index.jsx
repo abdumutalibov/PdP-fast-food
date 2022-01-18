@@ -1,5 +1,4 @@
 import React from 'react'
-import Menu from '../Menu';
 import { Container, Plus, Title, Wrapper,Tab,Input,Search } from './style';
 
 
@@ -18,7 +17,6 @@ export const Navbar = () => {
               <Input placeholder="Qidirish"></Input>
 <Search/>
           </Tab>
-            {/* <Menu/> */}
             </Wrapper>
         </Container>
     )

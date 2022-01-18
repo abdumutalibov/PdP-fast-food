@@ -1,13 +1,11 @@
 import React from "react";
 import './style.css'
-import Menu from "../Menu";
 import Dropdown from '../dropdown/Dropdown'
 import user_image from '../../../assets/icons/Path.png'
 import notifications from '../../../assets/JsonData/notification.json'
 import {
   Container,
   Input,
-  Path,
   Plus,
   Link,
   Search,

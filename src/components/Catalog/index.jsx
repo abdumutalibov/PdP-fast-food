@@ -3,7 +3,7 @@ import React from 'react';
 import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 
 export const Katalog = ({ location }) => {
-  const {  } = useJsApiLoader({
+  const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: 'AIzaSyDqw3adF1rAFs5-n2G1Emu4Z90ce31tOto',
     id: 'fast - food',
   });

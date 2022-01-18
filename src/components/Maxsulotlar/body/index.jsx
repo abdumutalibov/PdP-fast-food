@@ -1,7 +1,5 @@
-import React, { useState } from "react";
 import { Container, Item, Topbar } from "./style";
 import Delete from "../../Generic/Delete";
-import Pen from "../../Generic/Pen";
 import { MaxsulotContext } from "../../../context/Maxsulotlar/maxsulotlar";
 import Menu from "../Menu";
 export const Body = ({ value }) => {
