@@ -4,8 +4,8 @@ import "./style.css";
 import {
   Dropdown,
   Path,
-  Menu_Close,
-  X,
+  // Menu_Close,
+  // X,
   H4,
   Container,
   UpdataItem,
@@ -77,9 +77,9 @@ export const Menu = () => {
 
             <Dropzone />
           </Container>
-          <Menu_Close onClick={() => closeMenu()}>
+          {/* <Menu_Close onClick={() => closeMenu()}>
             <X />
-          </Menu_Close>
+          </Menu_Close> */}
         </div>
       </div>
 

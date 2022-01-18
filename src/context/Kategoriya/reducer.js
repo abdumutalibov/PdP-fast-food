@@ -5,7 +5,7 @@ export const reducer = (state, action) => {
       let filtered = state.filter(
         (data) => data.id !== action.payload.id
       ); 
-      return state, filtered;
+      return  filtered;
     default:
       return state;
   }

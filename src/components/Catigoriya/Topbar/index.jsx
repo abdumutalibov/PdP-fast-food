@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Wrapper } from './style';
+import { Container } from './style';
 
 export const Topbar = () => {
     return (
