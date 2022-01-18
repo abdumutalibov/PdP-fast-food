@@ -37,7 +37,7 @@ export const Menu = () => {
 
   const setActiveMenu = () => menu_ref.current.classList.add("active");
 
-  const closeMenu = () => menu_ref.current.classList.remove("active");
+  // const closeMenu = () => menu_ref.current.classList.remove("active");
   return (
     <>
       <Dropdown ref={menu_toggle_ref} onClick={() => setActiveMenu()}>
