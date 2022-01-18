@@ -75,9 +75,9 @@ export const Menu = () => {
          <Save>Saqlsh</Save>
             {/* <Dropzone /> */}
           </Container>
-          <Menu_Close onClick={() => closeMenu()}>
+          {/* <Menu_Close onClick={() => closeMenu()}>
             <X />
-          </Menu_Close>
+          </Menu_Close> */}
         </div>
       </div>
 

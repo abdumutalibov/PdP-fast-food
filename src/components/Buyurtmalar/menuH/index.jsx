@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Wrapper } from "./style";
 import ProductCard from "../../ProductCard H";
-import { card } from "../../../mock/card";
 import { BuyurtmaContext } from "../../../context/Buyurtmalar/buyurtmalar";
 export const Body = () => {
   const [card] = BuyurtmaContext();
