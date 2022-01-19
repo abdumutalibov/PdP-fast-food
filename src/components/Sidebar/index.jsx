@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../assets/imgs/logo.png";
+import logo from "../../assets/imgs/logo.png";
 import {
   activeStyle,
   Container,
