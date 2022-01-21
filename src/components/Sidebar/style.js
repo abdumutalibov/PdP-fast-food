@@ -91,6 +91,7 @@ align-items: center;
     border-radius: 6px;
     margin-left: 40px;
     transition: all 0.4s;
+    
     :hover{
      background-color: #FCB600;
     }
