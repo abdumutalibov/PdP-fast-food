@@ -122,8 +122,6 @@ export const ToggleClone = styled(Toggle)`
   @media (max-width: 1900px) {
     display: flex;
     margin-left: auto;
-    margin-left: auto;
-    margin-left: auto;
   }
 `;
 export const MenuV = styled(menuV)`
