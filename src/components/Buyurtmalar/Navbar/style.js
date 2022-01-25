@@ -134,6 +134,7 @@ export const MenuH = styled(menuH)`
   height: 14px;
   fill: ${({ active }) => (active ? "#8d9ba8" : "transparent")};
   fill: ${({ active }) => (active ? "#8d9ba8" : "transparent")};
+  fill: ${({ active }) => (active ? "#8d9ba8" : "transparent")};
 `;
 export const IconsWrapper = styled.div`
   display: flex;
