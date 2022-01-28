@@ -11,6 +11,7 @@ height:100vh;
 padding:28px 0 40px 0;
 background:white;
 position: sticky;
+position: sticky;
   top: 0;
   z-index: 999;
 `;
