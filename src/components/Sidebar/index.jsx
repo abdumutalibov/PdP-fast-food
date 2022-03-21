@@ -13,6 +13,8 @@ import {
 import { sidebar } from "../../utils/sidebar";
 import { ReactComponent as Chiqish } from "../../assets/icons/logout.svg";
 
+
+
 export const Sidebar = () => {
   return (
     <Container>
@@ -24,6 +26,7 @@ export const Sidebar = () => {
         </Text>
       </LogoWrapper>
       <Wrapper>
+        
         {sidebar.map(({ id, title, path, hidden, Icon }) => {
           return (
             <Item key={id}>
@@ -39,7 +42,11 @@ export const Sidebar = () => {
         <IconWrapper>
           <Chiqish exact activeStyle={activeStyle}  />
         </IconWrapper>
-        <IconWrapper.Title>Chiqish</IconWrapper.Title>
+      <Link to='/'>
+
+      <IconWrapper.Title>Chiqish</IconWrapper.Title>
+      </Link>  
+      
       </Wrapper>
     </Container>
   );

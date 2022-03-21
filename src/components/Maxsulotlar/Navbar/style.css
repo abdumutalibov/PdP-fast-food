@@ -1,0 +1,45 @@
+
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.notification-item:hover {
+    background-color: var(--second-bg);
+}
+
+.notification-item > i {
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+
+.topnav__right-user {
+    display: flex;
+    align-items: center;
+    /* margin-right: auto; */
+    /* border: 1px solid  #e5e5e5; */
+    /* border-radius: 50%; */
+
+}
+
+.topnav__right-user__image {
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topnav__right-user__image > img {
+    width: 50%;
+}
+
+.topnav__right-user__name {
+    font-size: 1rem;
+    font-weight: 600;
+}

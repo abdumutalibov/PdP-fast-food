@@ -5,11 +5,20 @@ export const Container = styled.div`
 
 display: flex;
 flex-direction: column;
+<<<<<<< HEAD
 width: 300px;
 min-width: 300px;
+=======
+min-width: 300px;
+width:300px;
+>>>>>>> a527c1d6db56355461f13b35df2753527a0c239d
 height:100vh;
 padding:28px 0 40px 0;
 background:white;
+position: sticky;
+  top: 0;
+  z-index: 999;
+  z-index: 999;
 `;
 
 export const LogoWrapper = styled.div`
@@ -88,6 +97,7 @@ align-items: center;
     border-radius: 6px;
     margin-left: 40px;
     transition: all 0.4s;
+    
     :hover{
      background-color: #FCB600;
     }
@@ -105,6 +115,7 @@ padding: 10px;
 background: #f6f6f6;
 border-radius: 6px;
 margin: 0 20px 0 40px; 
+
 `
 
 IconWrapper.Title = styled.div`
@@ -118,6 +129,10 @@ export const activeStyle = {
   color: 'white',
   background: '#FCB600',
   padding: '10px 0',
+<<<<<<< HEAD
   padding: '10px 0',
   
 };
+=======
+};
+>>>>>>> a527c1d6db56355461f13b35df2753527a0c239d
