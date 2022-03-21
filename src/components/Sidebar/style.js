@@ -6,6 +6,7 @@ export const Container = styled.div`
 display: flex;
 flex-direction: column;
 width: 300px;
+min-width: 300px;
 height:100vh;
 padding:28px 0 40px 0;
 background:white;
@@ -116,6 +117,7 @@ IconWrapper.Title = styled.div`
 export const activeStyle = {
   color: 'white',
   background: '#FCB600',
+  padding: '10px 0',
   padding: '10px 0',
   
 };
