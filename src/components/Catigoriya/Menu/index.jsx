@@ -64,7 +64,8 @@ export const Menu = () => {
               <Label>Bosh kategoriyaga biriktirish</Label>
 
               <Select name="active" id="active">
-                <Option value="burger">Ichimlik</Option>
+                <Option value="burger">Ichimlik   </Option>
+                
                 <Option value="lavash">Coca Cola</Option>
                 <Option value="Mini lavsh">Pepsi</Option>
                 <Option value="Mini lavsh">Sprayt</Option>

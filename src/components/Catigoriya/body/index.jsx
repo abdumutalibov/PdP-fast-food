@@ -15,7 +15,8 @@ export const Body = ({ value }) => {
     <Container>
       <Item>
         <Item.Text> {value.food} </Item.Text>
-        <Item.Text>{value.kategotiya}</Item.Text>
+        <Item.Text>{value.kategotiya}
+        </Item.Text>
         <Item.Text>{value.empty}</Item.Text>
         <Item.Text last>
           <Menu />
